@@ -1,0 +1,17 @@
+{
+  "name": "quinarycalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Lucas Lowe, Benjamin Britton, Kareline Jones, Owen Johnson, Alec Burch-DeWitt",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "assert": "^2.1.0"
+  }
+}
