@@ -1,11 +1,26 @@
-var main = require('../index');
-var assert = require('assert');
+const { add, subtract, multiply, divide } = require('../index');
+const assert = require('assert');
 
-describe('Example test case', function() {
+describe('Example add test case', function() {
     it('add correctly', function() {
-        assert.strictEqual(main.add(1, 2), 3);
+        assert.strictEqual(add(1, 2), 3);
     });
-    it('add incorrectly', function() {
-        assert.notStrictEqual(main.add(1, 2), 4);
+});
+
+describe('Example subtract test case', function() {
+    it('subtract correctly', function() {
+        assert.strictEqual(subtract(1, 2), -1);
+    });
+});
+
+describe('Example multiply test case', function() {
+    it('multiply correctly', function() {
+        assert.strictEqual(multiply(1, 2), 2);
+    });
+});
+
+describe('Example divide test case', function() {
+    it('divide correctly', function() {
+        assert.strictEqual(divide(1, 2), .5);
     });
 });
