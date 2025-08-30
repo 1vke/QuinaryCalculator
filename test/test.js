@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide } = require('../index');
+const { add, subtract, multiply, divide } = require('../src/js/calculator');
 const assert = require('assert');
 
 describe('Example add test case', function() {

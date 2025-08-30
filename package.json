@@ -2,7 +2,7 @@
   "name": "quinarycalculator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/js/calculator.js",
   "scripts": {
     "test": "mocha"
   },
