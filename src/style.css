@@ -18,7 +18,7 @@ body {
     padding: 20px;
     display: grid;
     grid-template-rows: minmax(0, .2fr) minmax(0, .8fr);
-    gap: 10px;
+    gap: 15px;
     background-color: #212124;
 }
 
@@ -36,26 +36,38 @@ body {
    background-color: #313134;
    display: flex;
    /* grid-template-columns: 1fr 1fr auto; */
-   gap: 10px;
+   gap: 15px;
    font-size: 32pt;
 }
 
+.output-container {
+    padding: 10px;
+    background: linear-gradient(145deg, #87CEEB, #5f9ea0);
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 .numbers-container {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   gap: 8px;
+   grid-template-rows: repeat(3, 1fr);
+   gap: 12px;
    flex: 2;
 }
-
 
 .operations-container {
    display: flex;
    flex-direction: column;
-   gap: 8px;
+   gap: 12px;
    flex: 1;
 }
 
+.number-btn:hover{
+    transform: translateY(-2px);
+}
+ .operation-btn:hover{
+    transform: translateY(-2px);
+ }
 
 .zero{
    grid-column: 1 / span 2;
