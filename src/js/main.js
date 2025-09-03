@@ -102,6 +102,16 @@ function handleClear() {
 function toggleBase() {
     quinaryDisplayMode = !quinaryDisplayMode;
 
+    const toggleBaseButton = document.querySelector('.toggle-base-button');
+    
+    if (quinaryDisplayMode) {
+        toggleBaseButton.textContent = 'QUI';
+        toggleBaseButton.className = 'toggle-base-button quinary-mode';
+    } else {
+        toggleBaseButton.textContent = 'DEC';
+        toggleBaseButton.className = 'toggle-base-button decimal-mode';
+    }
+
     updateDisplay();
 }
 
@@ -126,6 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
     squareButton.onclick = () => handleSpecialOperation('square');
     equalButton.onclick = handleEquals;
     toggleBaseButton.onclick = toggleBase;
+    toggleBaseButton.textContent = 'QUI';
+    toggleBaseButton.className = 'toggle-base-button quinary-mode';
 
     numberButtons.forEach(button => {
         button.onclick = () => {
