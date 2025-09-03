@@ -65,7 +65,6 @@ body {
 .calculator .divide-button { grid-row: 1; }
 .calculator .equal-button { grid-row: 5; }
 
-
 .calculator .add-button,
 .calculator .subtract-button,
 .calculator .multiply-button,
@@ -80,3 +79,11 @@ body {
     font-size: 20pt;
 }
 
+.toggle-base-button.decimal-mode {
+    background-color:#313134;
+    color: white;
+}
+
+.toggle-base-button {
+    transition: all 0.7s ease;
+}
