@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, quinaryToDecimal, decimalToQuinary } = require('../src/js/calculator');
+const { add, subtract, multiply, divide, sqrt, square, quinaryToDecimal, decimalToQuinary } = require('../src/js/calculator');
 const assert = require('assert');
 
 describe('Example add test case', function() {
@@ -22,6 +22,24 @@ describe('Example multiply test case', function() {
 describe('Example divide test case', function() {
     it('divide correctly', function() {
         assert.strictEqual(divide(1, 2), .5);
+    });
+});
+
+describe('sqrt', function() {
+    it('should return 10 for 100 input', function() {
+        assert.equal(sqrt(100), 10);
+    });
+    it('should return 5 for 25 input', function() {
+        assert.equal(sqrt(25), 5);
+    });
+});
+
+describe('square', function() {
+    it('should return 100 for 10 input', function() {
+        assert.equal(square(10), 100);
+    });
+    it('should return 0 for 0 input', function() {
+        assert.equal(square(0), 0);
     });
 });
 

@@ -14,6 +14,14 @@ function divide(a, b) {
     return a / b;
 }
 
+function sqrt(a) {
+    return Math.sqrt(a);
+}
+
+function square(a) {
+    return a*a;
+}
+
 function quinaryToDecimal(quinary) {
     return parseInt(quinary, 5);
 }
@@ -35,6 +43,8 @@ module.exports = {
     subtract,
     multiply,
     divide,
+    sqrt,
+    square,
     quinaryToDecimal,
     decimalToQuinary
 }
