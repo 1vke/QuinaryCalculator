@@ -1,5 +1,5 @@
-const { add, subtract, multiply, divide, sqrt, square, quinaryToDecimal, decimalToQuinary } = require('../src/js/calculator');
-const assert = require('assert');
+import { add, subtract, multiply, divide, sqrt, square, quinaryToDecimal, decimalToQuinary } from '../src/js/calculator.js';
+import assert from 'assert';
 
 describe('Example add test case', function() {
     it('add correctly', function() {
