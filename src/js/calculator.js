@@ -23,16 +23,22 @@ export function square(a) {
 }
 
 export function quinaryToDecimal(quinary) {
-    return parseInt(quinary, 5);
+    place = 1
+    if (quinary < 0) {place  = -1}
+    q = quinary.toString();
+    return place * parseInt(q, 5);
 }
 
 export function decimalToQuinary(decimal) {
-    if (decimal === 0) return "0";
+    if (decimal === 0) return 0;
+    place = 1
+    if (decimal < 0){ place = -1
+    }
     let quinary = "";
     let quotient = decimal;
     while (quotient > 0) {
         quinary = (quotient % 5).toString() + quinary;
         quotient = Math.floor(quotient / 5);
   }
-  return quinary;
+  return place * parseInt(quinary);
 }
