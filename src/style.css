@@ -22,7 +22,7 @@ body {
     background-color: #212124;
 }
 
-.calculator input#output {
+.calculator input#display {
     width: 100%;
     height: 75px;
     outline: none;
