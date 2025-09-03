@@ -1,32 +1,32 @@
-function add(a, b) {
+export function add(a, b) {
     return a + b;
 } 
 
-function subtract(a, b) { 
+export function subtract(a, b) { 
     return a - b;
 }
 
-function multiply(a, b) {
+export function multiply(a, b) {
     return a * b;
 } 
 
-function divide(a, b) { 
+export function divide(a, b) { 
     return a / b;
 }
 
-function sqrt(a) {
+export function sqrt(a) {
     return Math.sqrt(a);
 }
 
-function square(a) {
+export function square(a) {
     return a*a;
 }
 
-function quinaryToDecimal(quinary) {
+export function quinaryToDecimal(quinary) {
     return parseInt(quinary, 5);
 }
 
-function decimalToQuinary(decimal) {
+export function decimalToQuinary(decimal) {
     if (decimal === 0) return "0";
     let quinary = "";
     let quotient = decimal;
@@ -35,16 +35,4 @@ function decimalToQuinary(decimal) {
         quotient = Math.floor(quotient / 5);
   }
   return quinary;
-}
-
-
-module.exports = {
-    add,
-    subtract,
-    multiply,
-    divide,
-    sqrt,
-    square,
-    quinaryToDecimal,
-    decimalToQuinary
 }
