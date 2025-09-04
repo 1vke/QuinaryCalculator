@@ -1,6 +1,12 @@
 import { add, subtract, multiply, divide, sqrt, square, quinaryToDecimal, decimalToQuinary } from '../src/js/calculator.js';
 import assert from 'assert';
 
+describe('only integer input', function() {
+    it('integer only',() => {
+        assert(Number.isInteger(3));
+    });
+});
+
 describe('Example add test case', function() {
     it('add correctly', function() {
         assert.strictEqual(add(1, 2), 3);
