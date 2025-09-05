@@ -23,6 +23,7 @@ export function square(a) {
 }
 
 export function quinaryToDecimal(quinary) {
+    quinary = toString(quinary);
     return parseInt(quinary, 5);
 }
 
@@ -34,5 +35,5 @@ export function decimalToQuinary(decimal) {
         quinary = (quotient % 5).toString() + quinary;
         quotient = Math.floor(quotient / 5);
   }
-  return quinary;
+  return parseInt(quinary);
 }
